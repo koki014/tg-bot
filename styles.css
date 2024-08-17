@@ -1,0 +1,89 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.wheel {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px auto;
+    border: 10px solid #333;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.wheel-segment {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #f1c40f;
+    text-align: center;
+    line-height: 100px;
+    color: #333;
+    transform-origin: 100% 100%;
+}
+
+.wheel-segment:nth-child(1) {
+    transform: rotate(0deg) translate(-100%, -100%);
+}
+
+.wheel-segment:nth-child(2) {
+    transform: rotate(60deg) translate(-100%, -100%);
+}
+
+.wheel-segment:nth-child(3) {
+    transform: rotate(120deg) translate(-100%, -100%);
+}
+
+.wheel-segment:nth-child(4) {
+    transform: rotate(180deg) translate(-100%, -100%);
+}
+
+.wheel-segment:nth-child(5) {
+    transform: rotate(240deg) translate(-100%, -100%);
+}
+
+.wheel-segment:nth-child(6) {
+    transform: rotate(300deg) translate(-100%, -100%);
+}
+
+.spin-button {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.spin-button:hover {
+    background-color: #2ecc71;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
