@@ -19,8 +19,6 @@ document.getElementById("spin-button").addEventListener("click", function() {
         result.textContent = "Kazandığınız Ödül: " + winningSegment.textContent;
     }, 3000);
 
-    Telegram.WebApp.ready();
-
     // Kullanıcıdan etkileşim bekleyen bir uyarı
     alert("Tam ekrana geçmek için tıklayın.");
     // Bu etkileşimden sonra tam ekran modunu aç
