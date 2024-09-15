@@ -3,9 +3,7 @@ alert("salam");
 
 
 document.getElementById('expand').addEventListener('click', function() {
-    alert("salam3");
     Telegram.WebApp.expand();
-    alert("salam4");
 });
 
 document.getElementById("spin-button").addEventListener("click", function() {
@@ -30,8 +28,8 @@ document.getElementById("spin-button").addEventListener("click", function() {
 
 });
 
-Telegram.WebApp.ready(function(){
-    Telegram.WebApp.expand();
-});
+Telegram.WebApp.ready();
+
+Telegram.WebApp.expand();
 
 alert("salam2");
