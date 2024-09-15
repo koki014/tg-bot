@@ -1,6 +1,8 @@
 /* script.js */
 
-Telegram.WebApp.expand();
+Telegram.WebApp.ready(function(){
+    Telegram.WebApp.expand();
+});
 
 document.getElementById("spin-button").addEventListener("click", function() {
     var wheel = document.getElementById("wheel");
