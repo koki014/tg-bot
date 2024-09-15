@@ -1,10 +1,4 @@
 /* script.js */
-alert("salam");
-
-
-document.getElementById('expand').addEventListener('click', function() {
-    Telegram.WebApp.expand();
-});
 
 document.getElementById("spin-button").addEventListener("click", function() {
     var wheel = document.getElementById("wheel");
@@ -31,5 +25,3 @@ document.getElementById("spin-button").addEventListener("click", function() {
 Telegram.WebApp.ready();
 
 Telegram.WebApp.expand();
-
-alert("salam2");
