@@ -18,4 +18,11 @@ document.getElementById("spin-button").addEventListener("click", function() {
         var winningSegment = segments[winningSegmentIndex];
         result.textContent = "Kazandığınız Ödül: " + winningSegment.textContent;
     }, 3000);
+
+    Telegram.WebApp.ready(); 
+
+    // Sayfa yüklendiğinde otomatik olarak tam ekran moduna geç
+    window.onload = function() {
+        Telegram.WebApp.expand();
+    };
 });
