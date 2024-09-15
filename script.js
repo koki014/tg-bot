@@ -4,6 +4,10 @@ Telegram.WebApp.ready(function(){
     Telegram.WebApp.expand();
 });
 
+document.getElementById('expand').addEventListener('click', function() {
+    Telegram.WebApp.expand();
+});
+
 document.getElementById("spin-button").addEventListener("click", function() {
     var wheel = document.getElementById("wheel");
     var result = document.getElementById("result");
