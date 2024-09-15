@@ -1,11 +1,6 @@
 /* script.js */
 
-Telegram.WebApp.ready(); 
-
-// Sayfa yüklendiğinde otomatik olarak tam ekran moduna geç
-window.onload = function() {
-    Telegram.WebApp.expand();
-};
+Telegram.WebApp.expand();
 
 document.getElementById("spin-button").addEventListener("click", function() {
     var wheel = document.getElementById("wheel");
