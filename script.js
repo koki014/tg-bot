@@ -1,11 +1,17 @@
 /* script.js */
+alert("salam");
 
 Telegram.WebApp.ready(function(){
     Telegram.WebApp.expand();
 });
 
+alert("salam2");
+
+
 document.getElementById('expand').addEventListener('click', function() {
+    alert("salam3");
     Telegram.WebApp.expand();
+    alert("salam4");
 });
 
 document.getElementById("spin-button").addEventListener("click", function() {
