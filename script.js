@@ -19,10 +19,10 @@ document.getElementById("spin-button").addEventListener("click", function() {
         result.textContent = "Kazandığınız Ödül: " + winningSegment.textContent;
     }, 3000);
 
-    Telegram.WebApp.ready(); 
+    Telegram.WebApp.ready();
 
-    // Sayfa yüklendiğinde otomatik olarak tam ekran moduna geç
-    window.onload = function() {
-        Telegram.WebApp.expand();
-    };
+    // Kullanıcıdan etkileşim bekleyen bir uyarı
+    alert("Tam ekrana geçmek için tıklayın.");
+    // Bu etkileşimden sonra tam ekran modunu aç
+    Telegram.WebApp.expand();
 });
